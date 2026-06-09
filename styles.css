@@ -88,24 +88,54 @@ img {
 }
 
 .circle-container {
-  width: 70px;              /* Equal width and height make a perfect square */
+  width: 70px;
   height: 70px;
-  background-color: #ffba3b; /* Your desired shade of yellow */
-  border-radius: 50%;        /* Turns the square container into a perfect circle */
-  display: flex;             /* Centers the image perfectly inside the circle */
+  background-color: #ffba3b;
+  border-radius: 50%;    
+  display: flex;   
   justify-content: center;
   align-items: center;
-  overflow: hidden;          /* Clips any image parts extending past the circle */
+  overflow: hidden; 
+}
+.circle-container-blue {
+  width: 70px;
+  height: 70px;
+  background-color: #3b79ff;
+  border-radius: 50%;    
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+.circle-container-green {
+  width: 70px;
+  height: 70px;
+  background-color: #62ff3b;
+  border-radius: 50%;    
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
+}
+.circle-container-red {
+  width: 70px;
+  height: 70px;
+  background-color: #ff3b3b;
+  border-radius: 50%;    
+  display: flex;   
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; 
 }
 .circle-container-big {
-  width: 110px;              /* Equal width and height make a perfect square */
+  width: 110px;      
   height: 110px;
-  background-color: #ffba3b; /* Your desired shade of yellow */
-  border-radius: 50%;        /* Turns the square container into a perfect circle */
-  display: flex;             /* Centers the image perfectly inside the circle */
+  background-color: #ffba3b; 
+  border-radius: 50%;  
+  display: flex;  
   justify-content: center;
   align-items: center;
-  overflow: hidden;          /* Clips any image parts extending past the circle */
+  overflow: hidden;  
 }
 
 .cat{
@@ -193,19 +223,63 @@ button {
     gap: 30px;
 }
 
-.cards2{
+.ann-cards{
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    background-color: #FFFFFF;
+    text-align: left;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px; 
+}
+.ann-cards .card {
+    border-bottom: 2px solid #bbbbbb;
+    margin:0;
+    padding: 0;
+}
+.ann-cards p {
+  color: rgb(92, 92, 92);
+  font-weight: normal;
+  font-size: 16px;
+}
+.ann-cards .title{
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
 }
 
 .announcements{
     grid-column: 2/3
 }
 
-.trending{
+.ann-grid{
     display: grid;
+    grid-template-rows: 4fr 1fr 4fr;
 }
 
-.trending .card{
+.trending-text{
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+.trending-cards{
     display: grid;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+    align-items: center;
+}
+
+.trending-user{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.trending-user-name{
+    display: grid;
+    gap: 5px;
+}
+
+.nickname{
+    color: grey;
 }
