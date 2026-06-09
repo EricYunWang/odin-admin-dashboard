@@ -10,7 +10,7 @@ img {
 }
 .container {
     display: grid;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
     grid-template-columns: 1fr 4fr;
 }
 .sidebar{
@@ -55,5 +55,101 @@ img {
 
 .header{
     display: grid;
-    background-color: antiquewhite;
+    background-color: whitesmoke;
+    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: center;
+}
+
+.searchbar{
+    display: flex;
+    gap: 20px;
+    padding-left: 50px;
+}
+
+.profile{
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+    gap: 30px;
+}
+
+.grey-search-bar {
+    width: 800px;
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #d4d2d2; 
+    border-radius: 25px; 
+    border: 1px solid #f1f1f1;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.circle-container {
+  width: 70px;              /* Equal width and height make a perfect square */
+  height: 70px;
+  background-color: #ffba3b; /* Your desired shade of yellow */
+  border-radius: 50%;        /* Turns the square container into a perfect circle */
+  display: flex;             /* Centers the image perfectly inside the circle */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;          /* Clips any image parts extending past the circle */
+}
+.circle-container-big {
+  width: 110px;              /* Equal width and height make a perfect square */
+  height: 110px;
+  background-color: #ffba3b; /* Your desired shade of yellow */
+  border-radius: 50%;        /* Turns the square container into a perfect circle */
+  display: flex;             /* Centers the image perfectly inside the circle */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;          /* Clips any image parts extending past the circle */
+}
+
+.cat{
+    width: 85%;
+    height: 85%;
+    object-fit: contain;
+}
+
+.greet{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    gap: 30px;
+}
+
+.hi{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.user{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.buttons{
+    display: flex;
+    gap:50px;
+}
+
+button {
+  background-color: rgb(0, 153, 255);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 15px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.main-content{
+    background-color: grey;
 }
