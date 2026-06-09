@@ -152,4 +152,44 @@ button {
 
 .main-content{
     background-color: grey;
+    display: grid;
+    grid-template-rows: 1fr 13fr;
+    grid-template-columns: 3fr 1.1fr;
+    padding: 30px 20px 30px 20px;
+}
+
+.cards{
+    grid-row: 2;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding-right: 20px;
+}
+.card {
+  background-color: #FFFFFF;
+  color: black;
+  text-align: center;
+}
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.cards2{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.announcements{
+    grid-column: 2/3
+}
+
+.trending{
+    display: grid;
+}
+
+.trending .card{
+    display: grid;
 }
